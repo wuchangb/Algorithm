@@ -22,7 +22,6 @@ class Solution {
             //과제가 더 없는경우
             if (pq.isEmpty()) {
                 if (stack.isEmpty()) {      //스택도 다 비운경우
-//                    time += remain;
                     list.add(name);
                 } else {                    //스택 남아있는경우
                     list.add(name);
