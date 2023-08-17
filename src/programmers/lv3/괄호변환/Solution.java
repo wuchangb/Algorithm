@@ -2,12 +2,12 @@ package programmers.lv3.괄호변환;
 
 class Solution {
     public String solution(String p) {
-        String answer = change(p);
+        String answer = func(p);
 
         return answer;
     }
 
-    public String change(String p) {
+    public String func(String p) {
         if (p.isEmpty()) return "";
         int L = 0;
         int R = 0;
@@ -30,11 +30,11 @@ class Solution {
         }
 
         if (isCorrect(u)) {
-            v = change(v);
+            v = func(v);
             return u + v;
         } else {
             String res = "(";
-            res += change(v);
+            res += func(v);
             res += ")";
             u = u.substring(1, u.length() - 1);
             res += reverse(u);
