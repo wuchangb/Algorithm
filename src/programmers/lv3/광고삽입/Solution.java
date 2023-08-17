@@ -1,4 +1,4 @@
-package programmers.lv3.rhkdrh;
+package programmers.lv3.광고삽입;
 
 class Solution {
     public String solution(String play_time, String adv_time, String[] logs) {
