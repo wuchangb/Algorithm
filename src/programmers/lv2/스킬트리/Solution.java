@@ -1,4 +1,4 @@
-package programmers.lv2.skilltree;
+package programmers.lv2.스킬트리;
 
 import java.util.HashSet;
 import java.util.LinkedList;
