@@ -10,8 +10,8 @@ public class Solution {
         return res;
     }
 
-    static void dfs(int[] numbers, int[] answers, int target, int cnt) {
-        if (cnt == numbers.length) {
+    static void dfs(int[] numbers, int[] answers, int target, int idx) {
+        if (idx == numbers.length) {
             int tmp = 0;
             for (int i = 0; i < answers.length; i++) {
                 tmp += answers[i];
@@ -19,10 +19,10 @@ public class Solution {
             if (tmp == target) res++;
             return;
         }
-        answers[cnt] = numbers[cnt];
-        dfs(numbers, answers, target, cnt+1);
-        answers[cnt] = -numbers[cnt];
-        dfs(numbers,answers,target,cnt+1);
+        answers[idx] = numbers[idx];
+        dfs(numbers, answers, target, idx+1);
+        answers[idx] = -numbers[idx];
+        dfs(numbers,answers,target,idx+1);
     }
 }
 
