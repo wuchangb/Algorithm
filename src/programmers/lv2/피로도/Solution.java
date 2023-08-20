@@ -1,5 +1,8 @@
 package programmers.lv2.피로도;
 
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+
 public class Solution {
 
     static int answer = 0;
