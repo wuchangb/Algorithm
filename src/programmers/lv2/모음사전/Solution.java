@@ -1,4 +1,4 @@
-package programmers.lv2;
+package programmers.lv2.모음사전;
 
 import java.util.ArrayList;
 import java.util.Collections;
