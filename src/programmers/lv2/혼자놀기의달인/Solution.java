@@ -4,6 +4,7 @@ class Solution {
 
     static int answer = 0;
     static boolean[] visited;
+
     public int solution(int[] cards) {
         visited = new boolean[cards.length];
         for (int i = 0; i < cards.length; i++) {
