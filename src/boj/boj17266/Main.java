@@ -21,7 +21,6 @@ public class Main {
             arr[i] = Integer.parseInt(st.nextToken());
         }
 
-        HashSet<Integer> set = new HashSet<>();
         int left = arr[0]-1;
         int right = N;
         while (left <= right) {
@@ -37,14 +36,16 @@ public class Main {
     }
 
     static boolean isPossible(int h) {
-        int pre = 0;
+        int idx = 0;
         for (int i = 0; i < arr.length; i++) {
-            if (arr[i] - h <= pre) {
-                pre = arr[i] + h;
+            if (arr[i] - h <= idx) {
+                idx = arr[i] + h;
             } else {
                 return false;
             }
         }
-        return N - pre <= 0;
+
+        if (idx >= N) return true;
+        else return false;
     }
 }
