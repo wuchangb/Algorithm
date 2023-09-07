@@ -55,23 +55,20 @@ public class Main {
             }
 
             res++;
-            int rr = r + dir[d][0];
-            int cc = c + dir[d][1];
+            r = r + dir[d][0];
+            c = c + dir[d][1];
 
-            if (!possible(rr,cc) || snake[rr][cc]) break;
+            if (!possible(r,c) || snake[r][c]) break;
 
-            snake[rr][cc] = true;
-            q.add(new int[]{rr, cc});
+            snake[r][c] = true;
+            q.add(new int[]{r, c});
 
-            if (!apple[rr][cc]) {
+            if (!apple[r][c]) {
                 int[] poll = q.poll();
                 snake[poll[0]][poll[1]] = false;
             } else {
-                apple[rr][cc] = false;
+                apple[r][c] = false;
             }
-
-            r = rr;
-            c = cc;
         }
 
         return res;

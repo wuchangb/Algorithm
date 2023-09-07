@@ -33,8 +33,7 @@ public class Main {
         for (int i = 0; i < N; i++) {
             for (int j = 0; j < M; j++) {
                 if (graph[i][j] != 0 && graph[i][j] != 6) {
-                    arr[idx] = new Node(i, j, graph[i][j]);
-                    idx++;
+                    arr[idx++] = new Node(i, j, graph[i][j]);
                 }
             }
         }

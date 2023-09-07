@@ -3,7 +3,6 @@ package boj.boj17266;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.util.HashSet;
 import java.util.StringTokenizer;
 
 public class Main {
@@ -28,7 +27,7 @@ public class Main {
             if (isPossible(mid)) {
                 right = mid - 1;
             } else {
-                left = mid+1;
+                left = mid + 1;
             }
         }
 
